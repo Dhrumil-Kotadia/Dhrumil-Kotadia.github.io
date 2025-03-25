@@ -41,7 +41,7 @@
       
       	header h2 {
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
         }
 
         .profile img {
@@ -93,6 +93,11 @@
 
         .buttons a:hover {
             background-color: #34495e;
+        }
+
+        .projects h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
         }
 
         .projects ul {
@@ -150,7 +155,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 50%;
+            height: 65%;
             background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             text-align: center;
@@ -161,6 +166,44 @@
 
         .project-image:hover .overlay {
             opacity: 1;
+        }
+
+        .education-entry {
+            display: flex;
+            align-items: flex-start; /* Align to the top */
+            margin-bottom: 50px;
+        }
+
+        .education-logo {
+            width: 100px;
+            height: auto;
+            margin-right: 10px; /* Creates space between logo and text */
+        }
+
+        .education-details {
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .education-details h3 {
+            /* margin-bottom: 10px; */
+            font-weight: bolder;
+        }
+
+        .education-details h5 {
+            margin-top: 10px;
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .education-details h6 {
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .education-details p {
+            margin-top: 16px;
+            font-size: small;
         }
     </style>
 </head>
@@ -180,45 +223,47 @@
         </div>
         <h2>dkotadia@wpi.edu</h2>
         <div class="buttons">
+            <a href="/index.html">Home</a>
             <a href="/about.html">About</a>
             <a href="https://www.linkedin.com/in/dhrumil-kotadia/details/projects/">Projects</a>
-            <a href="/education.html">Education</a>
         </div>
     </div>
 </header>
 
 <div class="container">
     <section class="projects">
-        <h2>Overview</h2>
-        <ul>
-            Currently pursuing full-time roles in autonomous systems and AI-driven perception. As a Perception Engineer, I specialize in camera calibration, sensor fusion, and deep learning for autonomous systems. With experience in ADAS, SLAM, and computer vision, I develop robust perception solutions to enhance vehicle safety and efficiency.
-        </ul>
-    </section>
-</div>
-<div class="container">
-    <section class="projects">
-        <h2>Areas of Interest</h2>
-            <li>Computer Vision</li>
-            <li>Deep Learning</li>
-            <li>Sensor Fusion</li>
-            <li>SLAM</li>
-            <li>Object Detection</li>
-            <li>Tracking</li>
-            <li>Segmentation</li>
-        <!-- <ul>
-            Computer Vision, Deep Learning, Sensor Fusion, SLAM, Object Detection, Tracking, Segmentation, 
-        </ul> -->
-
-    <!-- <section id="motion-planning">
-        <h2>Motion Planning</h2>
-        <div class="project-image">
-            <img src="./Motion_Planning_gif.gif" alt="Motion Planning Image">
-            <div class="overlay">
-                <p>This is a motion planning project. Click for more details.</p>
-                <a href="#">Learn More</a>
+        <h2>Education</h2>
+    
+        <div class="education-entry">
+            <img class="education-logo" src="images/uni_logos/WPI.png" alt="Worcester Polytechnic Institute">
+            <div class="education-details">
+                <h3>Worcester Polytechnic Institute</h3>
+                <h5>Master of Science in Robotics Engineering</h5>
+                <h6>Worcester, Massachusetts, USA</h6>
+                <p>2023 - Present</p>
             </div>
         </div>
-    </section> -->
+
+        <div class="education-entry">
+            <img class="education-logo" src="images/uni_logos/DAU.png" alt="Dhirubhai Ambani Institute of ICT">
+            <div class="education-details">
+                <h3>Dhirubhai Ambani Institute of ICT</h3>
+                <h5>Master of Technology in Information and Communication Technology</h5>
+                <h6>Gandhinagar, Gujarat, India</h6>
+                <p>2017 - 2019</p>
+            </div>
+        </div>
+    
+        <div class="education-entry">
+            <img class="education-logo" src="images/uni_logos/GTU.png" alt="Gujarat Technological University">
+            <div class="education-details">
+                <h3>Gujarat Technological University</h3>
+                <h5>Bachelor of Engineering in Computer Engineering</h5>
+                <h6>Ahmedabad, Gujarat, India</h6>
+                <p>2013 - 2017</p>
+            </div>
+        </div>
+    </section>
 </div>
 
 <!-- <footer>
