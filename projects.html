@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhrumil Kotadia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #34495e;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: #fff;
+            padding-top: 40px;
+      		padding-bottom: 40px;
+            background: linear-gradient(to bottom, #2c3e50 60%, #34495e 40%);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+      
+      	header h2 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            position: relative;
+            z-index: 1;
+            background-color: #fff;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #2c3e50;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.5s ease;
+        }
+
+        .buttons a:hover {
+            background-color: #34495e;
+        }
+
+        .projects ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+        }
+
+        .projects li {
+            margin: 0 10px;
+        }
+
+        .projects a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .projects a:hover {
+            background-color: #d5dbdb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #34495e;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .project-image {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0px;
+            margin-left: 30px;
+            width: 550px;
+            /* height: 500px; */
+            border: 5px #333;;
+        }
+
+        .project-image img {
+            width: 220px;
+            height: 220px;
+            transition: transform 0.3s ease;
+            border-radius: 5%;
+            border: 1px solid #fff;
+        }
+
+        .project-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-image .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 230px;
+            height: 230px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding-top: 30px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-image .overlay a {
+            color:#fff;
+            font-weight: bolder;
+        }
+
+        .project-details p {
+            margin-left: 20px;
+            margin-bottom: 0px;
+            font-size: small;
+        }
+
+        .project-details h3 {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: x-large;
+        }
+
+        .project-details a {
+            margin-left: 22px;
+            margin-top: 10px;
+            font-size: medium;
+            color: #fff;
+        }
+
+        .project-image:hover .overlay {
+            opacity: 1;
+        }
+
+        .project {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        
+        <div class="profile">
+            <img src="images/profile/Dhrumil_Kotadia.jpg" alt="Dhrumil Kotadia">
+        </div>
+         <h1>Dhrumil Kotadia</h1>
+         
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dhrumil-kotadia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Dhrumil-Kotadia" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <h2>dkotadia@wpi.edu</h2>
+        <div class="buttons">
+            <a href="/education.html">Education</a>
+            <a href="/about.html">About</a>
+            <a href="/index.html">Home</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section id="projects">
+        <div class="project">   
+            <div class="project-image">
+                <img src="./images/projects/risk_estimation_output.gif" alt="risk_estimation_output">
+                <div class="overlay">
+                    <a href="https://github.com/Dhrumil-Kotadia/Vision_Based_Collision_Risk_Estimation" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Vision Based Collision Risk Estimation</h3>
+                <p>Designed a semantic segmentation-based system utilizing Mask R-CNN, SORT for real-time tracking, and pedestrian velocity prediction to generate danger zones around pedestrians. The resulting system estimates collision risk at 10 FPS.</p>
+                <p>Technologies: Python, Pytorch, OpenCV, Scipy, Mask R-CNN, SORT</p>
+                <a href="https://github.com/Dhrumil-Kotadia/Vision_Based_Collision_Risk_Estimation" target="_blank">Click here for more info</a>
+            </div>
+        </div>
+        <div class="project">   
+            <div class="project-image">
+                <img src="./images/projects/stereo_odometry_output.gif" alt="stereo_odometry_output">
+                <div class="overlay">
+                    <a href="https://github.com/Dhrumil-Kotadia/Stereo_Visual_Odometry" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Stereo Visual Odometry</h3>
+                <p>Designed a scalable monocular visual odometry system for the estimation of the 6 DOF pose of the ego vehicle. Implemented ORB feature matching, depth estimation, triangulation and Bundle Adjustment, processing 12 fps on the KITTI dataset.</p>
+                <p>Technologies: C++, OpenCV, Eigen, Ceres</p>
+                <a href="https://github.com/Dhrumil-Kotadia/Stereo_Visual_Odometry" target="_blank">Click here for more info</a>
+            </div>
+        </div>
+        <div class="project">   
+            <div class="project-image">
+                <img src="./images/projects/nerf.gif" alt="nerf">
+                <div class="overlay">
+                    <a href="https://github.com/Dhrumil-Kotadia/3D_Scene_Reconstruction_using_NeRF" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>3D Scene Reconstruction using Nerf</h3>
+                <p>Designed and implemented a Neural Radiance Fields (NeRF) deep learning model to generate novel views of scenes from images, allowing the creation of 3D object GIFs with photorealistic rendering and seamless view synthesis.</p>
+                <p>Technologies: Python, Pytorch, OpenCV, Scipy</p>
+                <a href="https://github.com/Dhrumil-Kotadia/3D_Scene_Reconstruction_using_NeRF" target="_blank">Click here for more info</a>
+            </div>
+        </div>
+        <div class="project">   
+            <div class="project-image">
+                <img src="./images/projects/enhanced_odometry.gif" alt="nerf">
+                <div class="overlay">
+                    <a href="https://github.com/Dhrumil-Kotadia/Object_Detection_Enhanced_Visual_Odometry" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Object Detection Enhanced Visual Odometry</h3>
+                <p>Improved feature based monocular visual odometry system using dynamic object detection. ORB features from dynamic objects are filtered using YOLOv8 in the scene. Achieved 10% enhancement in the overall estimated trajectory.</p>
+                <p>Technologies: Python, OpenCV, Pytorch, Numpy, Scipy</p>
+                <a href="https://github.com/Dhrumil-Kotadia/Object_Detection_Enhanced_Visual_Odometry" target="_blank">Click here for more info</a>
+            </div>
+        </div>
+        <div class="project">   
+            <div class="project-image">
+                <img src="./images/projects/monocular_slam.png" alt="nerf">
+                <div class="overlay">
+                    <a href="https://github.com/Dhrumil-Kotadia/Monocular_Visual_SLAM" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Monocular Visual SLAM</h3>
+                <p>Developed a Visual SLAM system for autonomous vehicles. Leveraged feature-based methods (ORB), loop closure detection with Bag-of-Words and Bundle Adjustment, reducing trajectory drift by 20%.</p>
+                <p>Technologies: Python, OpenCV, DBoW, Numpy, Scipy</p>
+                <a href="https://github.com/Dhrumil-Kotadia/Monocular_Visual_SLAM" target="_blank">Click here for more info</a>
+            </div>
+        </div>
+        <div class="project">   
+            <div class="project-image">
+                <img src="./images/projects/panorama.png" alt="nerf">
+                <div class="overlay">
+                    <a href="https://github.com/Dhrumil-Kotadia/Panorama_Generation-Feature_Based_Image_Stitching" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <h3>Panorama Generation - Feature Based Image Stitching</h3>
+                <p>Designed a module to create a panoramic image from multiple images(up to 6) using Harris Corner detection, Feature descriptor generation, Non Maximum Suppression, Feature matching using feature descriptors and RANSAC.</p>
+                <p>Technologies: Python, OpenCV, Numpy, Matplotlib</p>
+                <a href="https://github.com/Dhrumil-Kotadia/Panorama_Generation-Feature_Based_Image_Stitching" target="_blank">Click here for more info</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- <footer>
+    <div class="container">
+        <p>&copy; 2024 Dhrumil Kotadia. All rights reserved.</p>
+    </div>
+</footer> -->
+
+</body>
+</html>
